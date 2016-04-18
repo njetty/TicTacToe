@@ -1,0 +1,7 @@
+
+
+/* TEAM */
+Creator: Naveen Jetty: http://www.naveenjetty.com
+Twitter: @naveenjetty
+/* SITE */
+Standards: HTML5, CSS3

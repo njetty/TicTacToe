@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en" >
+    <![endif]-->
+    <!--[if gt IE 8]>
+    <!-->
+    <html class="no-js" lang="en" >
+        <!--
+        <![endif]-->
+        <head>
+            <meta charset="utf-8" />
+            <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+            <meta content="True" name="HandheldFriendly" />
+            <meta content="320" name="MobileOptimized" />
+            <meta content="A very hard game of tic tac toe." name="description" />
+            <title>Tic Tac Toe</title>
+            <link href="humans.txt" rel="author" />
+            <link href="favicon.ico" rel="icon" />
+			<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+			<link rel='stylesheet' type="text/css" href='{{ url_for('static',filename='styles/index.css')}}'/>
+            <script type="text/javascript" src={{ url_for('static',filename='javascript/head.js') }}></script>
+        </head>
+        <body>
+            <div class="row">
+                <div class="large-12 columns text-center">
+                    <h1 class="subheader">Tic Tac Toe</h1>
+                    <h4 class="subheader">You won't beat me. But you can try.</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-6 small-9 small-centered large-centered columns text-center">
+                    <ul class="small-block-grid-3 board">
+                        <li>
+                            <div class="space-wrapper-1">
+                                <div class="space-wrapper-2">
+                                    <div class="space-wrapper-3">
+                                        <div class="space top-left">
+                                            <i class="fa" id="top-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="space-wrapper-1">
+                                <div class="space-wrapper-2">
+                                    <div class="space-wrapper-3">
+                                        <div class="space top-center">
+                                            <i class="fa" id="top-center"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="space-wrapper-1">
+                                <div class="space-wrapper-2">
+                                    <div class="space-wrapper-3">
+                                        <div class="space top-right">
+                                            <i class="fa" id="top-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="space-wrapper-1">
+                                <div class="space-wrapper-2">
+                                    <div class="space-wrapper-3">
+                                        <div class="space middle-left">
+                                            <i class="fa" id="middle-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="space-wrapper-1">
+                                <div class="space-wrapper-2">
+                                    <div class="space-wrapper-3">
+                                        <div class="space middle-center">
+                                            <i class="fa" id="middle-center"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="space-wrapper-1">
+                                <div class="space-wrapper-2">
+                                    <div class="space-wrapper-3">
+                                        <div class="space middle-right">
+                                            <i class="fa" id="middle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="space-wrapper-1">
+                                <div class="space-wrapper-2">
+                                    <div class="space-wrapper-3">
+                                        <div class="space bottom-left">
+                                            <i class="fa" id="bottom-left"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="space-wrapper-1">
+                                <div class="space-wrapper-2">
+                                    <div class="space-wrapper-3">
+                                        <div class="space bottom-center">
+                                            <i class="fa" id="bottom-center"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="space-wrapper-1">
+                                <div class="space-wrapper-2">
+                                    <div class="space-wrapper-3">
+                                        <div class="space bottom-right">
+                                            <i class="fa" id="bottom-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 columns text-center">
+                    <a class="computer" id="start-computer">
+                        <i class="fa fa-laptop fa-5x"></i>
+                        <p>You Start</p>
+                    </a>
+                </div>
+                <div class="small-4 columns text-center">
+                    <h3 class="subheader prompt" id="prompt">Who starts?</h3>
+                </div>
+                <div class="small-4 columns text-center">
+                    <a class="human" id="start-human">
+                        <i class="fa fa-user fa-5x"></i>
+                        <p>I'll Start</p>
+                    </a>
+                </div>
+            </div>
+            <script  type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script  type="text/javascript" src={{ url_for('static',filename='javascript/tail.js') }}></script>
+        </body>
+    </html>
